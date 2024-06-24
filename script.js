@@ -85,3 +85,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listener for hash change to handle myPhoto visibility
     window.addEventListener('hashchange', handleMyPhoto);
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const navbarToggle = document.querySelector('.navbar-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navbarToggle.addEventListener('click', function() {
+        navLinks.classList.toggle('show-nav');
+    });
+});
+
